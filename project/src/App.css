@@ -1,0 +1,52 @@
+/* Thiết kế App chung */
+.App {
+  text-align: center;
+  position: relative;
+}
+
+.App-header {
+  margin-bottom: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Đưa các nội dung vào giữa */
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.senorita-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: -1; /* Đưa hình ảnh xuống phía sau các phần tử khác */
+}
