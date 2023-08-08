@@ -27,7 +27,7 @@ const SenoritaHotel = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/dich-vu">Dịch vụ</NavLink>
+              <NavLink to="/service">Dịch vụ</NavLink>
             </li>
             <li>
               <NavLink to="/lien-he">Liên hệ</NavLink>
