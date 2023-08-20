@@ -1,9 +1,10 @@
 import React from 'react';
-import './SenoritaHotel.css'; 
-import logo from '../assets/logo.png';
-import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
+import './Senoritahotel.css'; 
+import logo from '../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
-const SenoritaHotel = () => {
+
+const Senoritahotel = () => {
   return (
     <div className="senorita-hotel-container">
       <header className="header">
@@ -13,33 +14,19 @@ const SenoritaHotel = () => {
         <h1>Señorita Hotel</h1>
         <nav className="navbar">
           <ul>
-          <li>
-              <NavLink exact to="/senorita-hotel" activeClassName="active-link">
-                Trang chủ
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/booking">Đặt phòng</NavLink>
-            </li>
-            <li>
-              <NavLink exact to="/introduction" activeClassName="active-link">
-                Giới thiệu
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/service">Dịch vụ</NavLink>
-            </li>
-            <li>
-              <NavLink to="/lien-he">Liên hệ</NavLink>
-            </li>
+          <li><Link to="/senorita-hotel" className="home-link">Trang chủ</Link></li>
+            <li><Link to="/booking">Đặt phòng</Link></li>
+            <li><Link to="/introduction">Giới thiệu</Link></li>
+            <li><Link to="/service">Dịch vụ</Link></li>
+            <li><Link to="/lien-he">Liên hệ</Link></li>
           </ul>
         </nav>
       </header>
       <div className="content">
         <h3>WELCOME TO SEÑORITA BOUTIQUE HOTEL !</h3>
-        <img src={require('../assets/senorita.jpg')} alt="Ảnh Trang Chủ" />
+        <img src={require('../../assets/senorita.jpg')} alt="Ảnh Trang Chủ" />
         <p>Tọa lạc bên bãi biển Mỹ Khê xinh đẹp được tạp chí Forbes bình chọn là một trong sáu bãi biển đẹp nhất hành tinh, 
-            khách sạn SEÑORITA BOUTIQUE HOTEL hứa hẹn sẽ mang đến cho Qúy khách một không gian nghỉ ngơi lý tưởng và thoải mái nhất. 
+            khách sạn SEÑORITA BOUTIQUE HOTEL hứa hẹn sẽ mang đến cho Quý khách một không gian nghỉ ngơi lý tưởng và thoải mái nhất. 
             SEÑORITA BOUTIQUE HOTEL được thiết kế theo lối kiến trúc vừa cổ điển vừa hiện đại mang phong cách sang trọng, tinh tế, lại vừa trang nhã, ấm áp.
             Được thiết kế với hệ thống 46 phòng ngủ khách sạn, trang trí nội thất tiện nghi, hiện đại, hồ bơi tại sân thượng rộng rãi thoáng mát sẽ giúp Quý khách thực sự có được những phút giây thư giãn tuyệt vời bên gia đình và bạn bè..
         </p>
@@ -49,4 +36,4 @@ const SenoritaHotel = () => {
 };
       
 
-export default SenoritaHotel;
+export default Senoritahotel;

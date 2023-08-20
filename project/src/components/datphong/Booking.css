@@ -1,0 +1,75 @@
+/* Booking.css */
+
+/* Styles for Booking page */
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.booking-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.booking-content h3 {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.date-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Đổi thành align-items: center để căn giữa theo chiều ngang */
+  margin-top: 20px; /* Thêm khoảng cách giữa tiêu đề và phần chọn ngày */
+}
+
+.room-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Đổi lại thành align-items: flex-start để đưa phần "room-selection" sang bên trái */
+  margin-top: 20px; /* Thêm khoảng cách giữa phần chọn ngày và phần "room-selection" */
+}
+
+.booking-summary {
+  text-align: right;
+  flex: 1;
+}
+
+.room-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.room-type img {
+  max-width: 80px;
+  margin-right: 10px;
+}
+
+.room-type select {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.book-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-button:hover {
+  background-color: #ff4242;
+}

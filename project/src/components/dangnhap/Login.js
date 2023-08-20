@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom'; 
-import SenoritaHotel from './SenoritaHotel'; 
+import Senoritahotel from '../trangchu/Senoritahotel';
 
 const Login = () => {
   const [email, setEmail] = useState('');

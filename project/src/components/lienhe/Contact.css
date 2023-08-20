@@ -1,0 +1,45 @@
+/* Contact.css */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .contact-form, .contact-info {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-form h4, .contact-info h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .send-button {
+    background-color: #A0522D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #7E3817;
+  }
+  
+  .contact-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  /* Rest of your existing CSS styles for the header and other elements */
+  

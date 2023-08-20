@@ -1,0 +1,90 @@
+
+.introduction-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* Add styling for the slideshow and introduction text */
+.intro-slideshow {
+  margin-top: 80px;
+  position: relative;
+  max-height: 800px;
+}
+
+.intro-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.intro-slide img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.intro-arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.intro-arrow {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.intro-arrow-left {
+  left: 0;
+}
+
+.intro-arrow-right {
+  right: 0;
+}
+
+.introduction-text {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+.intro-arrow:focus, .intro-arrow:active {
+  background-color: #eeb704bb;
+  color: #f8f7f2;
+}
+.active-link {
+  background-color: #eeb704bb;
+  color: #f8f7f2;
+}

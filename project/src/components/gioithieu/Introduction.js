@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Introduction.css'; 
-import logo from '../assets/logo.png';
+import logo from '../../assets/logo.png';
 
 
 const Introduction = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    require('../assets/intro_image5.jpg'),
-    require('../assets/intro_image3.jpg'),
-    require('../assets/intro_image1.jpg'),
-    require('../assets/intro_image4.jpg'),
-    require('../assets/intro_image2.jpg')
+    require('../../assets/intro_image5.jpg'),
+    require('../../assets/intro_image3.jpg'),
+    require('../../assets/intro_image1.jpg'),
+    require('../../assets/intro_image4.jpg'),
+    require('../../assets/intro_image2.jpg')
   ];
 
   const handlePrevSlide = () => {
@@ -34,20 +34,20 @@ const Introduction = () => {
             <li><Link to="/senorita-hotel" className="home-link">Trang chủ</Link></li>
             <li><Link to="/booking">Đặt phòng</Link></li>
             <li><Link to="/introduction">Giới thiệu</Link></li>
-            <li><Link to="/dich-vu">Dịch vụ</Link></li>
+            <li><Link to="/service">Dịch vụ</Link></li>
             <li><Link to="/lien-he">Liên hệ</Link></li>
           </ul>
         </nav>
       </header>
-    <div className="slideshow">
-      <div className="slide">
+    <div className="intro-slideshow">
+      <div className="intro-slide">
         <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
       </div>
-      <div className="arrows">
-        <div className="arrow arrow-left" onClick={handlePrevSlide}>
+      <div className="intro-arrows">
+        <div className="intro-arrow intro-arrow-left" onClick={handlePrevSlide}>
          &larr; {/* Mã Unicode cho mũi tên trái */}
         </div>
-        <div className="arrow arrow-right" onClick={handleNextSlide}>
+        <div className="intro-arrow intro-arrow-right" onClick={handleNextSlide}>
           &rarr; {/* Mã Unicode cho mũi tên phải */}
         </div>
       </div>
