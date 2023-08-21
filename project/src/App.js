@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from './components/dangnhap/Login';
 import Senoritahotel from './components/trangchu/Senoritahotel';
 import Introduction from './components/gioithieu/Introduction';

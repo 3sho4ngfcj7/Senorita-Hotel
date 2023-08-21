@@ -21,7 +21,6 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      
       const response = await fetch('https://64c8c6c9a1fe0128fbd63034.mockapi.io/users', {
         method: 'GET',
         headers: {
