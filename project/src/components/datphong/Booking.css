@@ -7,6 +7,8 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
 }
 
 .booking-content {
@@ -19,55 +21,76 @@
 
 .booking-content h3 {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   margin: 0;
   margin-right: auto;
   margin-left: auto;
+  color: #333;
 }
 
 .date-selection {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Đổi thành align-items: center để căn giữa theo chiều ngang */
-  margin-top: 20px; /* Thêm khoảng cách giữa tiêu đề và phần chọn ngày */
+  text-align: center;
+  margin-top: 10px;
 }
 
 .room-selection {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Đổi lại thành align-items: flex-start để đưa phần "room-selection" sang bên trái */
-  margin-top: 20px; /* Thêm khoảng cách giữa phần chọn ngày và phần "room-selection" */
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .booking-summary {
   text-align: right;
   flex: 1;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-right: 0;
 }
 
 .room-type {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .room-type img {
-  max-width: 80px;
-  margin-right: 10px;
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.room-type h4 {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 5px;
+  color: #ff6b6b;
+}
+
+.room-type p {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #666;
 }
 
 .room-type select {
-  width: 50px;
-  margin-left: 10px;
+  width: 60px;
+  margin-bottom: 10px;
 }
 
 .book-button {
   background-color: #ff6b6b;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  
 }
 
 .book-button:hover {

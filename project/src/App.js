@@ -1,11 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from './components/dangnhap/Login';
 import Senoritahotel from './components/trangchu/Senoritahotel';
 import Introduction from './components/gioithieu/Introduction';
 import Service from './components/dichvu/Service';
 import Contact from './components/lienhe/Contact';
 import Booking from './components/datphong/Booking';
+import PaymentPage from './components/Payment/PaymentPage';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/service" component={Service} />
         <Route path="/lien-he" component={Contact} />
         <Route path="/booking" component={Booking}/>
+        <Route path="/payment" component={PaymentPage} />
       </Switch>
     </Router>
   );
